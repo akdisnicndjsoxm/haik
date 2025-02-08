@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Code Rain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+
+    <!-- 提示被黑客入侵的弹窗 -->
+    <div id="hackerPopup" class="popup">
+        <div class="popup-content">
+            <p>你被黑客入侵了🤣</p>
+            <button onclick="closePopup()">关闭</button>
+        </div>
+    </div>
+
+    <!-- 模拟 Bash 终端 -->
+    <div id="terminal" class="terminal">
+        <div id="output"></div>
+        <input type="text" id="input" placeholder="输入命令..." autofocus />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+}
+
+canvas {
+    display: block;
+}
+
+/* 弹窗样式 */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    border: 2px solid #0F0;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+}
+
+.popup-content {
+    color: #0F0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.popup-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0F0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.popup-content button:hover {
+    background-color: #00FF00;
+    color: #000;
+}
+
+/* 终端样式 */
+.terminal {
+    display: none; /* 默认隐藏 */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    color: #0F0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    z-index: 1001;
+}
+
+#output {
+    height: 240px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+}
+
+#input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #0F0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    outline: none;
+}
